@@ -1,0 +1,36 @@
+terraform init
+
+terraform plan
+
+terraform apply
+
+terraform show
+
+terraform destroy
+
+terraform refresh
+
+terraform plan -generate-config-out=abc.tf
+
+terraform import aws_instance.akash i-00bdffc1e8048f11c
+
+variables:
+
+terraform apply -var-file="variables.tfvars"
+terraform apply -var="instance_type=t2.micro"
+export TF_VAR_instance_type="t2.micro"
+terraform apply
+
+
+workspaces:
+
+terraform workspace list
+
+terraform workspace show
+
+terraform workspace new dev
+
+terraform workspace select dev
+
+terraform workspace delete dev
+
