@@ -17,7 +17,7 @@ terraform apply -auto-approve
 terraform state 
 terraform state  list
 
-terraform show
+terraform show - shows if state file is available.
 
 terraform destroy
 
